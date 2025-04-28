@@ -6,3 +6,5 @@ nome = input("Digite o nome que deseja buscar: ")
 for i in range (len(nomes)):
     if nome == nomes[i]:
         print (f"nome {nome} encontrado na posição {i}!")
+    else:
+        print ("nome não existe")
