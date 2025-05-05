@@ -1,13 +1,18 @@
-notas = [0,0,0,0,0]
-soma = 0
-cont = 0
-for x in range (len(notas)):
-    notas [x] = float(input("Digite nota: "))
-for y in range (len(notas)):
-    soma += notas [y]
-media = soma/(len(notas))
-for z in range(len(notas)):
-    if notas [z] > media:
-        cont = cont +1
-print(f"Média das notas: {media:.2f}")
-print(f"{cont} aluno(s) ficaram acima da média.")
+nomes = ["", "", "", "", ""]
+
+for i in range(len(nomes)):
+    nomes[i] = input(f"Digite um nome {i+1}: ")
+
+for nome in nomes:
+    print(nome)
+
+nome = input("Digite um nome para buscar: ")
+encontrado = 0
+
+for j in range(len(nomes)):
+    if nome == nomes[j]:
+        print(f"Nome '{nome}' encontrado na posição {j}!")
+        encontrado += 1
+
+if encontrado == 0:
+    print("Nome não encontrado!")

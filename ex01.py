@@ -1,5 +1,8 @@
-nomes = ["","","","",""]
-for x in range(len(nomes)):
-    nomes[x]=input(f"digite o nome {x+1}: ")
+nomes = ["", "", "", "", ""]
+
 for i in range(len(nomes)):
-    print (i, nomes[i])
+    nomes[i] = input(f"Digite um nome {i+1}: ")
+
+for nome in nomes:
+    print(nome)
+
